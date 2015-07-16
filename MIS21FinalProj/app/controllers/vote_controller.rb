@@ -3,20 +3,19 @@ class VoteController < ApplicationController
   end
 
   def new
+    @vote = Vote.new
   end
 
   def create
-    @vote = Vote.new(vote_params)
-      if @user.save
+    @vote = current_user.votes.new(vote_params)
+      if @vote.save
         redirect_to vote_path(@user)
       else
-      render 'vote/new'
+        render 'new'
       end
   end
 
   def index
-    @votes = Vote.all
-    @votes.size
   end
 
   def edit
@@ -26,5 +25,10 @@ class VoteController < ApplicationController
   end
 
   def destroy
+  end
+
+  private
+  def vote_params
+    params.require(:vote).permit!
   end
 end
