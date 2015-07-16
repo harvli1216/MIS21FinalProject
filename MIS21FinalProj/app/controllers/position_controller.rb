@@ -12,7 +12,7 @@ class PositionController < ApplicationController
         if @position.save
           redirect_to position_path(@position)
         else
-         position render ‘new’
+         position render 'new'
       end
 	end
 

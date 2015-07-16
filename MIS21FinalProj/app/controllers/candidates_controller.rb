@@ -12,7 +12,7 @@ class CandidatesController < ApplicationController
       if @candidate.save
        redirect_to candidate_path(@candidate)
       else
-        render ‘new’
+        render 'new'
       end
   end
 
