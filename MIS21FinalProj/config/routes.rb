@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :candidates
+  get 'candidates/about'
+  get 'about' to: 'candidates#about'
+
   resources :user
 
 root to: "candidates#index"

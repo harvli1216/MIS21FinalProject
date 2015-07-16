@@ -41,4 +41,8 @@ class CandidatesController < ApplicationController
     redirect_to candidate_path
 
   end
+
+  def about
+    render 'about'
+  end
 end
