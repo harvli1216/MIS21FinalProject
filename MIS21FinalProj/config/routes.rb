@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :candidate
+  resources :candidates
   resources :user
 
 root to: "candidates#index"
