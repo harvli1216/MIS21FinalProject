@@ -1,17 +1,17 @@
 <h1>LIST OF CANDIDATES</h1>
 <%= link_to "Login", new_session_path(:user) %>
 <%= link_to "Add Candidate", new_candidate_path %>
+<%= link_to "Add Position", new_position_path %>
 <%= link_to "About", about_path %>
 <%= link_to "Register", new_registration_path(:user)%>
-<%= link_to "Vote", create_path %>
+<%= link_to "Vote", new_vote_path %>
 
 <br>
 <span> 
 	<%= link_to "Logout", destroy_user_session_path, method: :delete, class: "btn btn-success pull-right" %>
 </span>
-<% if @positions.empty? %>
-<% @positions.each do |p| %>
-   <h2><%= p.name %><h2>
+<% if !@positions.empty? %>
+   <h2><%= @position[1].name %><h2>
    <table class = "table">
    	<thead>
    		<th>Last Name</th>
@@ -19,7 +19,7 @@
    	</thead>
    	<tbody>
    	  <% if !@candidates.empty? %>
-        <%= @candidates.p.each do |c| %>
+        <%= @candidates.position[0].each do |c| %>
         <tr>
         	<td><%= c.last_name %></td>
         	<td><%= c.first_name %></td>
@@ -33,6 +33,4 @@
     </tbody>
    </table>
 <% end %>
-<% else %>
-<h2>No Positions</h2>
-<% end %>
+

@@ -1,17 +1,4 @@
 Rails.application.routes.draw do
-  get 'positions/index'
-
-  get 'positions/show'
-
-  get 'positions/create'
-
-  get 'positions/new'
-
-  get 'positions/update'
-
-  get 'positions/edit'
-
-  get 'positions/destroy'
 
   devise_for :users
   resources :positions
@@ -20,7 +7,7 @@ Rails.application.routes.draw do
   get 'about', to: 'candidates#about'
 
   resources :user
-  resources :vote
+  resources :votes
 
   get 'create', to: 'vote#create'
 

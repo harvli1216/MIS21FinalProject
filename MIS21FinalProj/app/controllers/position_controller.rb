@@ -10,7 +10,6 @@ class PositionController < ApplicationController
 	def create
 	   @position = Position.new(position_params)
         if @position.save
-        	@candidate = Candidate.find(position_params[:candidate_id])
             redirect_to candidate_path(@candidate)
         else
             render 'new'
