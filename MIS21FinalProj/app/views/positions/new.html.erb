@@ -1,0 +1,7 @@
+<h1>Positions#new</h1>
+<p>Find me in app/views/positions/new.html.erb</p>
+
+<%= simple_form_for @position do |f| %>
+	<%= f.input :name, as: :select, collection:  ["President", "Vice President", "Senator", "Congressman"] %> 
+	<%= f.button :submit, "Add Position" %>
+<% end %>

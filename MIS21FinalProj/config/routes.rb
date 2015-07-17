@@ -1,5 +1,20 @@
 Rails.application.routes.draw do
+  get 'positions/index'
+
+  get 'positions/show'
+
+  get 'positions/create'
+
+  get 'positions/new'
+
+  get 'positions/update'
+
+  get 'positions/edit'
+
+  get 'positions/destroy'
+
   devise_for :users
+  resources :positions
   resources :candidates
   #get 'candidates/about'
   get 'about', to: 'candidates#about'
