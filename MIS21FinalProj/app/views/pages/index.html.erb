@@ -1,15 +1,17 @@
 <% @positions.each do |p| %>
     <h2><%= p.name %></h2>
     <table class = "table">
-      <tr>
-        <td>Last Name</td>
-        <td>First Name</td>
-        <td>Votes</td>
-      </tr>
+      <thead>
+        <th>Last Name</th>
+        <th>First Name</th>
+        <th>Slogan</th>
+        <th>Votes</th>
+      </thead>
     <% p.candidates.each do |c| %>
        <tr>
         <td><%= c.last_name %></td>
         <td><%= c.first_name %></td>
+        <td><%= c.slogan %></td>
         <td><%= c.votes.size %></td>
        </tr>
     <% end %>
