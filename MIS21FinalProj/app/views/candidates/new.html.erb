@@ -1,6 +1,3 @@
-<h1>Candidates#new</h1>
-<p>Find me in app/views/candidates/new.html.erb</p>
-
 <%= simple_form_for @candidate do |f| %>
 	<%= f.input :position, as: :select, collection: Position.all %> 
 	<%= f.input :first_name %>

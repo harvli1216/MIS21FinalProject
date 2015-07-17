@@ -19,11 +19,11 @@
         <th>First Name</th>
         <th>Votes</th>
       </thead>
-    <% @candidates.p.each do |c| %>
+    <% p.candidates.each do |c| %>
        <tr>
-        <td><%= @candidate.last_name %></td>
-        <td><%= @candidate.first_name %></td>
-        <td><%= @candidate.votes.size %></td>
+        <td><%= c.last_name %></td>
+        <td><%= c.first_name %></td>
+        <td><%= c.votes.size %></td>
        </tr>
     <% end %>
     </table>

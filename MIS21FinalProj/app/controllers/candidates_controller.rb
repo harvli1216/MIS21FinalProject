@@ -11,7 +11,7 @@ class CandidatesController < ApplicationController
   def create
     @candidate = Candidate.new(candidate_params)
       if @candidate.save
-       redirect_to candidate_path(@candidate)
+       redirect_to root_path
       else
         render 'new'
       end
