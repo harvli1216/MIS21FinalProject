@@ -13,3 +13,29 @@
 	<%= link_to "Logout", destroy_user_session_path, method: :delete, class: "btn btn-success pull-right" %>
 </span>
 
+<h1>Candidates</h1>
+
+<% if !@positions.empty? %>
+ <% @position.each do |p| %>
+   <h2><%= p.name %><h2>
+   <table class = "table">
+   	<thead>
+   		<th>Last Name</th>
+   		<th>First Name</th>
+   	</thead>
+   	<tbody>
+   	  <% if !@candidates.empty? %>
+        <%= @candidate.p.each do |c| %>
+        <tr>
+        	<td><%= c.last_name %></td>
+        	<td><%= c.first_name %></td>
+        </tr>
+        <% else %>
+        <tr>
+        	<td>No Candidates</td>
+        </tr>
+    </tbody>
+   </table>
+<% else %>
+<p>Positions empty!</p>
+<% end %>
