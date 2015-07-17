@@ -1,4 +1,5 @@
 class VotesController < ApplicationController
+  before_action :authenticate_user!
   def show
   end
 
@@ -7,6 +8,7 @@ class VotesController < ApplicationController
   end
 
   def create
+    @candidates = Candidate.all
     @vote = current_user.votes.new(vote_params)
       if @vote.save
         redirect_to vote_path(@user)
