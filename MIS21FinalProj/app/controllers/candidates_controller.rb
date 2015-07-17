@@ -2,7 +2,6 @@ class CandidatesController < ApplicationController
   before_action :authenticate_user!
   def index
     @candidates = Candidate.all
-    @position = Candidate.find(params[:position_id])
     @positions = Position.all
   end
 
