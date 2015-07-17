@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :user
   resources :vote
 
-  get 'new', to: 'vote#new'
+  get 'create', to: 'vote#create'
 
 root to: "candidates#index"
 
