@@ -7,6 +7,41 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div id="navbar" class="container-fluid">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand">Home</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Candidates<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><%= link_to "All Candidates", candidates_path %></li>
+            <li><%= link_to "Add Candidate", new_candidate_path %></li>
+          </ul>
+        </li>        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      	<li><a href="#">Vote</a></li>
+        <li><a href="#">About</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Go to Profile</a></li>
+            <li><a href="#">My Vote Summary</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
 
 <%= yield %>
 

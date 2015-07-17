@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'pages/index'
+
+  get 'pages/about'
+
   devise_for :users
   resources :positions
   resources :candidates
@@ -11,7 +15,7 @@ Rails.application.routes.draw do
 
   get 'create', to: 'vote#create'
 
-root to: "candidates#index"
+root to: "pages#index"
 
 #testing lang
 

@@ -11,7 +11,7 @@ class PositionsController < ApplicationController
   def create
      @position = Position.new(position_params)
         if @position.save
-            redirect_to candidate_path(@candidate)
+            redirect_to root_path
         else
             render 'new'
       end
