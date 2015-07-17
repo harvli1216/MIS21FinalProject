@@ -1,5 +1,5 @@
 <%= simple_form_for @candidate do |f| %>
-	<%= f.input :position, as: :select, collection: Position.all %> 
+	<%= f.association :position, include_blank: false, as: :select, collection: Position.all %> 
 	<%= f.input :first_name %>
 	<%= f.input :last_name %>
 	<%= f.input :slogan %>
