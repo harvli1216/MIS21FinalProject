@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   get 'about', to: 'candidates#about'
 
   resources :user
+  resources :vote
+
+  get 'new', to: 'vote#new'
 
 root to: "candidates#index"
 
