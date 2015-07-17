@@ -45,4 +45,9 @@ class CandidatesController < ApplicationController
   def about
     render 'about'
   end
+
+  private
+  def candidate_params
+    params.require(:candidate).permit(:first_name, :last_name, :slogan, :candidate, :position_id)
+  end
 end

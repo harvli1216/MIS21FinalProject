@@ -1,2 +1,10 @@
 <h1>Candidates#new</h1>
 <p>Find me in app/views/candidates/new.html.erb</p>
+
+<%= simple_form_for @candidate do |f| %>
+	<%= f.input :position, as: :select, collection: ["President", "Vice President", "Senator", "Congressman"] %> 
+	<%= f.input :first_name %>
+	<%= f.input :last_name %>
+	<%= f.input :slogan %>
+	<%= f.button :submit, "Add Candidate" %>
+<% end %>
