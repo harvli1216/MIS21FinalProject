@@ -1,4 +1,5 @@
 class PositionsController < ApplicationController
+  before_action :authenticate_user!
   def show
     @position = Position.find(params[:id])
   end
