@@ -1,0 +1,202 @@
+
+/*hexcolors:
+black: #2d3033
+yellow: #fff568
+blue: #0aa0d9
+white: #f8f9f9*/
+body,html
+{
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+}
+/*navbar*/
+/*make logo the home page button*/
+.navbar .logo
+{	
+	height: 100px;
+	width: 175px;
+ }
+
+.navbar
+{
+	width: 100%;	
+	height: 100px;
+	background-color: #2d3033;
+}
+.navbar > ul
+{
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#navbar-home
+{
+	padding-top: 3px;
+	padding-left: 20px;
+}
+#navbar-candidate
+{
+	padding-top: 3px;
+	padding-left: 20px;
+}
+#navbar-vote
+{
+	padding-top: 3px;
+	padding-left: 20px;
+}
+#navbar-about
+{
+	padding-top: 3px;
+	padding-left: 20px;
+}
+#navbar-profile
+{
+	padding-top: 3px;
+	padding-left: 20px;
+}
+/*about page*/
+
+#about-us-title
+{
+	font-size: 50px;
+	padding-top: 200px;
+	text-align: center;
+}
+
+#about-group
+{
+	padding: 50px;
+	font-size: 30px;
+	text-align: text-center;
+	background-image: url(group.jpg);
+	background-repeat: no-repeat;;
+	height:1000px;
+	width: 750px;
+	
+}
+#dsc-txt
+{
+	color: #f8f9f9;
+}
+	
+#the-team
+{
+	font-size: 40px;
+	padding-top: 20px;
+	text-align: center;
+}
+#pic
+{
+	height: 150px;
+	width: 150px;
+	padding-left: 500px
+}
+#member-name
+{
+	padding-left: 700px;
+	font-size: 40px;
+}
+#member-description
+{
+	padding-left: 700px;
+	font-size: 30px;
+}
+
+/*home page*/
+.jumbotron
+{
+	padding-top: 600px;
+	background-image: url(jumbotron.jpg);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 500px;
+}
+
+/*all candidates page*/
+#all-candidates-table
+{
+	padding-top: 300px;
+	border: 10px;
+}
+#th
+{
+	padding-left: 30px;
+	font-size: 50px;
+}
+#tr
+{
+	padding-left: 30px;
+	font-size: 40px;
+}
+#td
+{	
+	text-align: center;
+	padding-left: 40px;
+}
+
+#allcan-add-can
+{
+	margin-top: 50px;
+	font-size: 30px;
+	background-color: #2d3033;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #f8f9f9;
+	margin-left:40%;
+}
+#all-can-vote
+{
+	margin-top: 50px;
+	font-size: 30px;
+	background-color: #2d3033;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #f8f9f9;
+
+}
+#all-can-vote a, #allcan-add-can {
+	color: #f8f9f9;
+}
+
+
+/*vote page*/
+
+/*summary of vote page*/
+
+/*add candidates page*/
+#add-can-title-text
+{
+	text-align: center;
+	font-size: 50px;
+}
+#instruction
+{
+	text-align: center;
+	font-size: 40px;
+	padding-top: 30px;
+	padding-left: 60px;
+	padding-
+	right: 30px;
+}
+#add-can-fname, #add-can-lname, #add-can-slogan
+{
+	padding-left: 15px;
+	font-size: 25px;
+	padding-right: 15px;
+}
+#save-can
+{
+	margin-top: 50px;
+	font-size: 30px;
+	background-color: #2d3033;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #f8f9f9;
+	margin-left:40%;
+}
+#choose-pos
+{
+	font-size: 40px;
+	text-align: center;
+	padding-left: 40%;
+}
+
+/*profile page*/
