@@ -6,13 +6,15 @@
       <thead>
         <th>Last Name</th>
         <th>First Name</th>
+        <th>Slogan</th>
         <th>Votes</th>
       </thead>
     <% p.candidates.each do |c| %>
        <tr>
         <td><%= c.last_name %></td>
         <td><%= c.first_name %></td>
-        <td><%= c.votes.size %></td>
+        <td><%= c.slogan %></td>
+        <td><%= c.botos.size %></td>
        </tr>
     <% end %>
     </table>
