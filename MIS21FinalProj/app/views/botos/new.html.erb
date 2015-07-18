@@ -1,0 +1,6 @@
+<h1>Vote</h1>
+<%= simple_form_for @boto do |f| %>
+  <%= f.association :candidate, as: :select, :collection =>Candidate.all %>
+  <%= f.input :comments, label: "Comments" %>
+  <%= f.button :submit %>
+<% end %>

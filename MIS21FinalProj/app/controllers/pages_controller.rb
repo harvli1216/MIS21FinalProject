@@ -2,6 +2,7 @@ class PagesController < ApplicationController
   def index
   	@positions = Position.all
   	@candidates = Candidate.all
+    @botos = Boto.all
   end
 
   def about
@@ -9,6 +10,6 @@ class PagesController < ApplicationController
 
   def profile
   	@user = current_user
-  	@votes = Vote.all
+  	@botos = Boto.all
   end
 end

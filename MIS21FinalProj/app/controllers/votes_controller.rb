@@ -5,6 +5,7 @@ class VotesController < ApplicationController
 
   def new
     @vote = Vote.new
+    @candidates = Candidate.all
   end
 
   def create

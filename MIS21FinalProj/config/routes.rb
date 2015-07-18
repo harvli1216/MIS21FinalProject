@@ -8,9 +8,9 @@ Rails.application.routes.draw do
   get 'profile', to: "pages#profile"
   get 'about', to: 'pages#about'
   resources :user
-  resources :votes
+  resources :botos
 
-  get 'create', to: 'vote#create'
+  get 'new', to: 'botos#new'
 
 root to: "pages#index"
 
