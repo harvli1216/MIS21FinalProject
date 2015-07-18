@@ -1,6 +1,0 @@
-<h1>Vote</h1>
-<%= simple_form_for @vote do |f| %>
-  <%= f.association :candidates, as: :select, collection: Candidates.all %>
-  <%= f.input :comments, label: "Comments" %>
-  <%= f.button :submit %>
-<% end %>

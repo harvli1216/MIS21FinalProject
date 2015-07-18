@@ -1,10 +1,12 @@
-<% if @current_user.votes.empty? %>
+<% if current_user.votes.empty? %>
 <table>
 <thead>You voted for:</thead>
-<% @current_user.votes.each do |f| %>
+<% current_user.votes.each do |f| %>
 <tr>
 <td><%= f.candidate.first_name %></td>
 <td><%= f.candidate.last_name %></td>
 </tr>
 <% end %>
 <% else %>
+<h4>You have no voted candidates</h4>
+<% end %>

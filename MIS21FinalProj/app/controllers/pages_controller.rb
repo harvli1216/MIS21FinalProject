@@ -6,4 +6,9 @@ class PagesController < ApplicationController
 
   def about
   end
+
+  def profile
+  	@user = current_user
+  	@votes = Vote.all
+  end
 end
