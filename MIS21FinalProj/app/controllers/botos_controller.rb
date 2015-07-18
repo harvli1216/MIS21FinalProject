@@ -5,9 +5,9 @@ class BotosController < ApplicationController
 
   def create
   	  @candidates = Candidate.all
-      @boto = current_user.botos.new(boto_params)
+      @boto = Boto.new(boto_params)
       if @boto.save
-        redirect_to vote_path(@user)
+        redirect_to root_path
       else
         render 'new'
       end
