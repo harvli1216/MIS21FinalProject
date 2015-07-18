@@ -12,12 +12,14 @@
       <thead id="tr1">
         <th id="th">First Name</th>
         <th id="th">Last Name</th>
+        <th id="th">Sloga</th?
         <th id="th">Votes</th>
       </thead>
       <% p.candidates.each do |c| %>
       <tr id="tr">
         <td id="td"><%= c.last_name %></td>
         <td id="td"><%= c.first_name %></td>
+        <td id="td"><%= c.slogan %></td>
         <td id="td"><%= c.votes.size %></td>
       </tr>
   <% end %>
