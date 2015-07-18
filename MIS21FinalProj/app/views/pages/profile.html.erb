@@ -1,7 +1,7 @@
-<% if !current_user.botos.empty? %>
+<% if !@user.botos.empty? %>
 <table>
 <thead>You voted for:</thead>
-<% current_user.botos.each do |f| %>
+<% @user.botos.each do |f| %>
 <tr>
 <td><%= f.candidate.first_name %></td>
 <td><%= f.candidate.last_name %></td>
