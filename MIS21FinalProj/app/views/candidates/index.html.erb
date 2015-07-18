@@ -1,37 +1,17 @@
 <head>
-  <title>Confirm Vote</title>
+  <title>All Candidates</title>
   <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/all.scss"> 
   <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <span>
     <% @positions.each do |p| %>
-    <h2><%= p.name %></h2>
-<<<<<<< HEAD
-    <table class = "table">
-      <thead>
-        <th>Last Name</th>
-        <th>First Name</th>
-        <th>Slogan</th>
-        <th>Votes</th>
-      </thead>
-    <% p.candidates.each do |c| %>
-       <tr>
-        <td><%= c.last_name %></td>
-        <td><%= c.first_name %></td>
-        <td><%= c.slogan %></td>
-        <td><%= c.botos.size %></td>
-       </tr>
-    <% end %>
-    </table>
-<% end %>
-=======
+      <h2><%= p.name %></h2>
     <table class="table table-bordered" id="all-candidates-table">
-      <% @positions.each do |p| %>
       <thead id="tr1">
         <th id="th">First Name</th>
         <th id="th">Last Name</th>
-        <th id="th">Sloga</th>
+        <th id="th">Slogan</th>
         <th id="th">Votes</th>
       </thead>
       <% p.candidates.each do |c| %>
@@ -39,11 +19,11 @@
         <td id="td"><%= c.last_name %></td>
         <td id="td"><%= c.first_name %></td>
         <td id="td"><%= c.slogan %></td>
-        <td id="td"><%= c.votes.size %></td>
+        <td id="td"><%= c.botos.size %></td>
       </tr>
   <% end %>
   </table>
   <% end %>
   </span>
 </body>
->>>>>>> origin/master
+
