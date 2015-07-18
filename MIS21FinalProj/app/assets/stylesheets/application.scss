@@ -15,3 +15,7 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+.navbar-default, .navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
+	background-color: #2d3033;
+	color: #f8f9f9;
+}
