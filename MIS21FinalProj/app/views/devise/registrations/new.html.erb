@@ -9,7 +9,7 @@
     <%= f.input :password_confirmation, required: true %>
     <%= f.input :first_name %>
     <%= f.input :last_name %>
-    <%= f.input :gender, as: :select, collection: ["Male","Female"] %> 
+    <%= f.input :gender, as: :select, include_blank: false, collection: ["Male","Female"] %> 
   </div>
 
   <div class="form-actions">
