@@ -5,8 +5,8 @@ Rails.application.routes.draw do
   resources :positions
   resources :candidates
   #get 'candidates/about'
-  get 'about', to: 'candidates#about'
   get 'profile', to: "pages#profile"
+  get 'about', to: 'pages#about'
   resources :user
   resources :votes
 
