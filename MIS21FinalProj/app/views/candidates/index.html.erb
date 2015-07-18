@@ -5,9 +5,11 @@
 </head>
 <body>
 <span>
+    
+    
+
+    <!-- 
     <% @positions.each do |p| %>
-    <h2><%= p.name %></h2>
-<<<<<<< HEAD
     <table class = "table">
       <thead>
         <th>Last Name</th>
@@ -25,9 +27,11 @@
     <% end %>
     </table>
 <% end %>
-=======
-    <table class="table table-bordered" id="all-candidates-table">
+======= -->
       <% @positions.each do |p| %>
+      <h2><%= p.name %></h2>
+    <table class="table table-bordered" id="all-candidates-table">
+      
       <thead id="tr1">
         <th id="th">First Name</th>
         <th id="th">Last Name</th>
@@ -39,7 +43,7 @@
         <td id="td"><%= c.last_name %></td>
         <td id="td"><%= c.first_name %></td>
         <td id="td"><%= c.slogan %></td>
-        <td id="td"><%= c.votes.size %></td>
+        <td id="td"><%= c.botos.size %></td>
       </tr>
   <% end %>
   </table>
