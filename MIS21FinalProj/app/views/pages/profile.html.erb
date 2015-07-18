@@ -1,4 +1,4 @@
-<% if current_user.votes.empty? %>
+<% if !current_user.votes.empty? %>
 <table>
 <thead>You voted for:</thead>
 <% current_user.votes.each do |f| %>
@@ -8,5 +8,5 @@
 </tr>
 <% end %>
 <% else %>
-<h4>You have no voted candidates</h4>
+<h4>You have not voted any candidates yet</h4>
 <% end %>
