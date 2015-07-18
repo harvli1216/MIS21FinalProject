@@ -5,4 +5,6 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 has_many :votes
 validates :gender, presence: true
+include Gravtastic
+gravtastic
 end
